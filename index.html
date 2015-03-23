@@ -1,1 +1,62 @@
-<h1> Titulo </h1>
+<html>
+<head>
+<!-- los comentarios en html se colocan dentro de las etiquetas que se muestran enseguida -->
+<!--   -->
+
+	<title>Mi pagina</title> <!-- Este titulo se ve en la pestaña del navegador  -->
+</head>
+<body><!-- el body es el cuerpo del decumento esto es lo que se en el navegador  -->
+<h1>Mi primera pagina</h1>
+<label>Sexo</label>
+<br/> <!-- los br/ se usan para dar un interlineado  -->
+M: <input type="radio" name="sexo" /><!-- los input de tipo radio que son de un mismo grupo deben tener el mismo nombre(name)  -->
+F: <input type="radio" name="sexo" /><!-- los input abren y se cierran en las mismas etiquetas  -->
+<br/>
+<hr/><!-- la etiqueta hr traza una linea horizontal  -->
+<label>Preferencias</label><br/>
+Cine: <input type="checkbox" name="cine" /><br/><!-- los checkbox deben tener distintos nombres  -->
+Deporte: <input type="checkbox" name="cine" /><br/>
+Musica: <input type="checkbox" name="cine" /><br/>
+<hr/>
+<p style="background:#D0FA58"><!-- cada etiquet es como una caja  -->
+	ESTE ES UN PARRAFO <br/> 
+	La señora Uzeada de Ribera Maldonado de Bracamonte y Anaya era baja, rechoncha, abigotada. Ya no existia razon para llamar talle al suyo. Sus colores vivos, sanos, podian mas que el albayalde y el soliman del afeite, con que se blanqueaba por simular melancolias. Gastaba dos parches oscuros, adheridos a las sienes y que fingian medicamentos. Tenia los ojitos ratoniles, maliciosos. Sabia dilatarlos duramente o desmayarlos con recato o levantarlos con disimulo. Caminaba contoneando las imposibles caderas y era dificil, al verla, no asociar su estampa achaparrada con la de ciertos palmipedos domesticos. Sortijas celestes y azules le ahorcaban las falanges
+</p>
+<hr/>
+<form method="GET" action="otra_pagina.html"> <!-- EL method GET envia los datos por la URL. action envia ala pagina.  -->
+	Nombre:<input type="text" id="nombre" name="nombre"><br/><!-- tambien se puede tener la propiead id o clase (class)  -->
+	Usuario: <input type="text" placeholder="digite nombre" required><br/><!-- required es obliga a llenarlo -->
+	Clave:<input type="password" class="clave" name="clave"><br/>
+	<select required>
+	<option value="" >Selecciones Ciudad</option><!-- el  texto que esta dentro de las etiquetas es el que se ve en pantalla -->
+	<option>Bogota</option><!-- Cuando el option no tiene value toma el mismo -->
+	<option value="Medellin">Medellin</option>
+	<option value="Cali">Cali</option>
+</select>
+<br>
+	<input type="submit" value="enviar"><hr/><!-- el boton submit envia el formulario de una vez.. el type button (boton normal)  -->
+
+</form>
+<br/>
+<table border="1">
+	<tr><!-- cada tr es una fila normal dentro van las columnas  -->
+	<th>Primera columna</th><!-- cada th es una columna pero en la cabecera de una tabla -->
+	<th>Segunda columna</th><!-- cada th es similar al td pero se resalta con negrita -->
+	<th>Tercera columna</th>
+	</tr>
+	<tr>
+		<td>Contenido1</td><!-- cada td es una columna esta tabla tiene 3 columnas -->
+		<td>Contenido2</td>
+		<td>Contenido3</td>
+	</tr>
+	<tr>
+		<td>Contenido1_2</td>
+		<td>Contenido2_2</td>
+		<td>Contenido3_2</td>
+	</tr>
+</table>
+<br/>
+<hr/>
+
+</body>
+</html>
